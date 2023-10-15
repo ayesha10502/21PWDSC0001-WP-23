@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+            }
+            body{
+                background-image: url(black.webp);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+           
+            header {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 70px 50px;
+                font-size: 30px;
+            }
+    
+            .container {
+                width: 80%;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                
+            }
+    
+            .image-container {
+                text-align: center; 
+            }
+    
+            .image-container img {
+                width: 200px; 
+                height: 200px; 
+                margin: 10px;
+            }
+        </style>
+        <link rel="stylesheet" href="lightbox.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>PHOTO GALLERY</h1>
+        </header>
+
+        <div class="container">
+            <div class="image-container">
+                <a href="pahari.jpg" data-lightbox="models" data-title="Shimla Hills">
+                     <img src="pahari.jpg">
+                </a>
+                 
+                <a href="shimla-pahari.jpg" data-lightbox="models" data-title="Shima Hills">
+                    <img src="shimla-pahari.jpg">
+                </a>
+                 
+                <a href="harno.jpg" data-lightbox="models" data-title="Harnoi Lake">
+                    <img src="harno.jpg">
+                </a>
+                 
+                <a href="pic.jpg" data-lightbox="models" data-title="Harnoi Lake">
+                    <img src="pic.jpg">
+                </a>
+                 
+                <a href="gali.webp" data-lightbox="models" data-title="Dunga Gali">
+                    <img src="gali.webp">
+                </a>
+                 
+                <a href="picnic.jpg" data-lightbox="models" data-title="Harnoi Lake">
+                    <img src="picnic.jpg">
+                </a>
+                 
+                <a href="InShot.jpg" data-lightbox="models" data-title="NathiaGali">
+                    <img src="InShot.jpg">
+                </a>
+                 
+                <a href="pk.jpg" data-lightbox="models" data-title="NathiaGali">
+                    <img src="pk.jpg">
+                </a>
+
+                <a href="winter.webp" data-lightbox="models" data-title="NathiaGali">
+                    <img src="winter.webp">
+                </a>
+
+                <a href="dng.webp" data-lightbox="models" data-title="DungaGali">
+                    <img src="dng.webp">
+                </a>
+
+                <a href="dunga-gali-pine-line.jpg" data-lightbox="models" data-title="DungaGali">
+                    <img src="dunga-gali-pine-line.jpg">
+                </a>
+
+                <a href="top.webp" data-lightbox="models" data-title="Mushkpuri Top">
+                    <img src="top.webp">
+                </a>
+            </div>
+        </div>
+        <script src="lightbox-plus-jquery.js"></script>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+            }
+            .contact{
+                position: relative;
+                min-height: 100vh;
+                padding: 50px 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(wp.webp);
+                background-size: 100%;
+            }
+            
+            .contact .content{
+                max-width: 800px;
+                text-align: center;
+             }
+             .contact .content h2{
+                font-size: 36px;
+                font-weight: 500;
+                color: #fff;
+             }
+             .contact .content p{
+                font-weight: 300;
+                color: #fff;
+             }
+             .container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+             }
+             .container .contactInfo{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+             }
+             .container .contactInfo .box{
+                position: relative;
+             }
+            
+             .container .contactInfo .box .text{
+                display: flex;
+                margin-left: 20px;
+                font-size: 16px;
+                color: #fff;
+                flex-direction: column;
+                font-weight: 300;
+             }
+             .container .contactInfo .box .text h3{
+                font-weight: 500;
+                color: #00bcd4;
+             }
+             .contactform{
+                width: 40%;
+                padding: 40px;
+                background: #fff;
+             }
+             .contactform h2{
+                font-size: 30px;
+                color: #333;
+                font-weight: 500;
+             }
+             .contactform .inputbox{
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+             }
+             .contactform .inputbox input,
+             .contactform .inputbox textarea{
+                width: 100%;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid #333;
+                outline: none;
+                resize: none;
+             }
+             .contactform .inputbox span{
+                position: absolute;
+                left: 0;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                pointer-events: none;
+                transition: 0.5s;
+                color: #666;
+             }
+             .contactform .inputbox input[type="submit"]{
+                width: 100px;
+                background: #00bcd4;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 18px;
+             }
+        </style>
+    </head>
+
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Feel free to Contact me for any query</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Peshawar, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>ayeshajamil10502@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactform">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="text" placeholder="Full Name" required>
+                            
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="email" name="text" placeholder="Email" required>
+                        </div>
+
+                        <div class="inputbox">
+                            <textarea placeholder="Type your Message" required></textarea>
+                            
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="submit" name="" value="Send">
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
